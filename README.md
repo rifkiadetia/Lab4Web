@@ -1,7 +1,7 @@
 # Lab4Web - Praktikum 4: CSS Layout
 
 Mata Kuliah: Pemrograman Web
-Nama:Rifki Ade Tia)
+Nama:Rifki Ade Tia
 NIM:312510334
 Kelas:I253C
 
