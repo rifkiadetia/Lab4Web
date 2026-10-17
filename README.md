@@ -1,9 +1,9 @@
 # Lab4Web - Praktikum 4: CSS Layout
 
-**Mata Kuliah:** Pemrograman Web
-**Nama:Rifki Ade Tia)
-**NIM:312510334
-**Kelas:I253C
+Mata Kuliah: Pemrograman Web
+Nama:Rifki Ade Tia)
+NIM:312510334
+Kelas:I253C
 
 ---
 
@@ -40,8 +40,6 @@ Lab4Web/
 
 Membuat file `lab4_box.html` berisi kerangka dasar HTML5 dengan elemen semantik `<header>` yang memuat judul `<h1>Box Element</h1>`.
 
-![Persiapan dokumen](screenshots/A1-persiapan.png)
-
 ## A.2 Membuat Box Element
 
 Menambahkan `<section>` berisi tiga `<div>` dengan class `div1`, `div2`, dan `div3`. Setiap `<div>` adalah sebuah **box**. Tanpa CSS tambahan, `<div>` bersifat *block* sehingga tersusun menumpuk ke bawah dan memenuhi lebar halaman.
@@ -53,8 +51,6 @@ Menambahkan `<section>` berisi tiga `<div>` dengan class `div1`, `div2`, dan `di
     <div class="div3">Div 3</div>
 </section>
 ```
-
-![Div tanpa float](screenshots/A2-div-tanpa-float.png)
 
 ## A.3 CSS Float Property
 
@@ -76,8 +72,6 @@ div {
 - Class `div1`, `div2`, `div3` memberi warna latar merah, kuning, dan hijau.
 
 **Hasil:** ketiga div tampil berjajar ke samping dan lebarnya menyesuaikan isi.
-
-![Box element float](screenshots/A3-box-float.png)
 
 ## A.4 Mengatur Clearfix
 
@@ -104,15 +98,11 @@ Menambahkan `<div class="div4">Div 4</div>` setelah `div3`, lalu CSS:
 | `right` | Tidak berefek di sini, karena tidak ada elemen float kanan |
 | `both` | Turun di bawah elemen float kiri maupun kanan |
 
-![Clearfix](screenshots/A4-clearfix.png)
-
 ---
 
 # Bagian B: Membuat Layout Sederhana (`lab4_layout`)
 
 Layout yang dibuat terdiri dari header, navigasi, hero panel, area main dan sidebar, serta footer.
-
-![Hasil akhir layout](screenshots/B-hasil-akhir.png)
 
 ## B.1 Persiapan File
 
@@ -156,8 +146,6 @@ Di dalam `#container` dibuat kerangka memakai elemen semantik HTML5:
 | `<aside>` | Konten pendamping (sidebar) |
 | `<footer>` | Kaki halaman |
 
-![Kerangka layout](screenshots/B2-kerangka.png)
-
 ## B.3 CSS Dasar dan Header
 
 Pada `style.css` ditambahkan:
@@ -167,8 +155,6 @@ Pada `style.css` ditambahkan:
 - `body`: pengaturan font, ukuran, dan warna teks.
 - `#container`: `width: 980px`, `margin: 0 auto` (posisi di tengah), dan `box-shadow` untuk bayangan.
 - `header` dan `header h1`: padding, margin, dan warna judul.
-
-![Tampilan header](screenshots/B3-header.png)
 
 ## B.4 Membuat Navigasi
 
@@ -184,8 +170,6 @@ nav a.active, nav a:hover { background-color: #2b83ea; }
 - `nav a` dengan `display: inline-block` membuat link berjajar ke samping namun tetap bisa diberi padding atas-bawah.
 - `a.active` menandai halaman aktif, `a:hover` memberi efek saat kursor diarahkan.
 
-![Navigasi](screenshots/B4-navigasi.png)
-
 ## B.5 Membuat Hero Panel
 
 **HTML:** mengisi `<section id="hero">` dengan `<h1>`, `<p>`, dan link tombol "Learn more".
@@ -199,8 +183,6 @@ nav a.active, nav a:hover { background-color: #2b83ea; }
 ```
 
 **Penjelasan:** hero panel adalah kotak abu-abu besar di bawah menu yang berfungsi sebagai sorotan utama halaman.
-
-![Hero panel](screenshots/B5-hero.png)
 
 ## B.6 Mengatur Layout Main dan Sidebar dengan Float
 
@@ -226,8 +208,6 @@ nav a.active, nav a:hover { background-color: #2b83ea; }
 - `li a` dengan `display: block` membuat seluruh baris dapat diklik.
 - `li:hover a` memberi efek abu-abu saat hover.
 
-![Sidebar widget](screenshots/B7-sidebar.png)
-
 ## B.8 Mengatur Footer
 
 ```css
@@ -235,8 +215,6 @@ footer { clear: both; background-color: #1d1d1d; padding: 20px; color: #eee; }
 ```
 
 **Penjelasan:** `clear: both` memaksa footer berada di bawah semua elemen float (main dan sidebar). Tanpa ini footer akan naik dan menempel di samping.
-
-![Footer](screenshots/B8-footer.png)
 
 ## B.9 Menambahkan Elemen pada Main Content (3 Kolom)
 
@@ -260,8 +238,6 @@ footer { clear: both; background-color: #1d1d1d; padding: 20px; color: #eee; }
 - **Clearfix** (`:after` dengan `clear: both`) membuat `.row` dan `.entry` membungkus anak yang float, sehingga tinggi parent tidak menjadi 0.
 - Perbaikan dari modul: selector `box img` ditulis `.box img` (menggunakan titik karena class).
 
-![Tampilan content](screenshots/B9-content.png)
-
 ## B.10 Menambahkan Content Artikel
 
 **HTML:** setelah `.row` di dalam `#main` ditambahkan dua pasang `<hr class="divider">` dan `<article class="entry">`. Artikel pertama berisi gambar di kiri, artikel kedua memakai `class="right-img"` sehingga gambar di kanan.
@@ -281,9 +257,6 @@ footer { clear: both; background-color: #1d1d1d; padding: 20px; color: #eee; }
 - `.divider` adalah garis pemisah antar bagian.
 - `.entry img` dengan `float: left` membuat teks mengalir di sebelah kanan gambar.
 - `.entry .right-img` menimpa menjadi `float: right` sehingga gambar pindah ke kanan.
-
-![Tampilan artikel](screenshots/B10-artikel.png)
-
 ---
 
 # Bagian C: Pertanyaan dan Tugas
@@ -292,14 +265,9 @@ footer { clear: both; background-color: #1d1d1d; padding: 20px; color: #eee; }
 
 Membuat halaman `about.html` dengan struktur layout yang sama (header, nav, footer) dan isi single layout berupa deskripsi diri dan portfolio. Menu **About** diberi `class="active"`.
 
-![Halaman About](screenshots/C1-about.png)
-
 ## C.2 Layout Menu Contact (`kontak.html`)
 
 Membuat halaman `kontak.html` dengan struktur layout yang sama dan isi berupa form: nama, email, dan pesan (message), serta tombol kirim. Menu **Kontak** diberi `class="active"`.
-
-![Halaman Kontak](screenshots/C2-kontak.png)
-
 ---
 
 ## Kesimpulan
